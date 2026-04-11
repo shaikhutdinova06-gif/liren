@@ -11,5 +11,6 @@ os.chdir(project_root)
 
 if __name__ == "__main__":
     import uvicorn
+    # Import from backend.main since main.py is in backend folder
     from backend.main import app
     uvicorn.run(app, host="0.0.0.0", port=8000)
